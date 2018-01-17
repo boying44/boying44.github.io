@@ -1,0 +1,12 @@
+*~
+.vscode/
+npm-debug.log
+node_modules/
+dist/css
+dist/assets
+dist/js
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
