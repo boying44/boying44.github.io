@@ -46,24 +46,51 @@ export default function BoyingTangSite() {
           <h2 className="text-3xl font-bold mb-4">Selected Projects</h2>
           <div className="grid gap-6">
             <article className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-semibold">API Refactor & Type Unification</h3>
+              <h3 className="text-xl font-semibold">Silk Browser Chromium Integration Accelerator (Amazon)</h3>
               <p className="text-gray-700 mt-2">
-                Refactored frontend/backend API structure to unify types, clarify contracts, and simplify routes. This improved maintainability and reduced integration bugs.
+                Streamlined weekly ingestion of 1,500+ Chromium commits; reduced commit lag from 3,000 to 1,000 by building custom automation and integration tooling across a 25M+ LOC codebase serving 9.7M+ users.
               </p>
+              <p className="text-gray-600 text-sm mt-2">Tech: Python, CI/CD, Linux, Chromium, Git, AWS</p>
             </article>
 
             <article className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-semibold">Observability Enhancements</h3>
+              <h3 className="text-xl font-semibold">Release CI/CD and Test Automation (Amazon)</h3>
               <p className="text-gray-700 mt-2">
-                Contributed to improving monitoring and visibility across services by working on dashboards, logs, and telemetry integrations.
+                Designed pipelines and UI Automator suites that cut over 12 hours of manual verification per release through gated builds, parallelization, and automated reporting.
               </p>
+              <p className="text-gray-600 text-sm mt-2">Tech: Python, UI Automator, CI/CD, AWS, Linux</p>
             </article>
 
             <article className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-semibold">Modern Web Deployment</h3>
+              <h3 className="text-xl font-semibold">Client-Facing Feature Platform & Design System (Aerware)</h3>
               <p className="text-gray-700 mt-2">
-                Built and deployed a modern React/Next.js app with GitHub Pages. Automated builds and checks were set up through GitHub Actions.
+                Partnered with design and backend to ship responsive interfaces; translated 47+ UI/UX specs into production and established reusable components and patterns to reduce UI defects and speed delivery.
               </p>
+              <p className="text-gray-600 text-sm mt-2">Tech: React, TypeScript/JavaScript, CSS, API integration, Microservices</p>
+            </article>
+
+            <article className="bg-white p-6 rounded-lg shadow">
+              <h3 className="text-xl font-semibold">Microservices Caching and Performance Optimization (NYU IT)</h3>
+              <p className="text-gray-700 mt-2">
+                Implemented targeted caching strategies that lowered latency and stabilized P95 across services with clear invalidation policies and metrics-driven tuning.
+              </p>
+              <p className="text-gray-600 text-sm mt-2">Tech: ASP.NET Core, C#, Redis/Memcached, REST, SQL</p>
+            </article>
+
+            <article className="bg-white p-6 rounded-lg shadow">
+              <h3 className="text-xl font-semibold">Role-Based Access Control and Auth Services (NYU IT)</h3>
+              <p className="text-gray-700 mt-2">
+                Built auth and RBAC services used across multiple departments; hardened security with token-based auth and scoped permissions, simplifying API consumption patterns.
+              </p>
+              <p className="text-gray-600 text-sm mt-2">Tech: ASP.NET Core, C#, REST, Identity, SQL</p>
+            </article>
+
+            <article className="bg-white p-6 rounded-lg shadow">
+              <h3 className="text-xl font-semibold">RESTful API Development and Integration (NYU IT)</h3>
+              <p className="text-gray-700 mt-2">
+                Delivered REST services and frontend integrations that improved UX and reduced backend load; standardized contracts and error handling to increase reliability across consumers.
+              </p>
+              <p className="text-gray-600 text-sm mt-2">Tech: ASP.NET Core, React/Redux, REST, TypeScript/JavaScript</p>
             </article>
           </div>
         </section>
