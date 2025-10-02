@@ -1,0 +1,1 @@
+import BoyingTangSite from "../components/PersonalSite";
