@@ -37,7 +37,7 @@ export default function BoyingTangSite() {
         <section id="about" className="mb-16">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-gray-700 max-w-2xl">
-            I'm a software engineer who values clarity, reliability, and pragmatism. My focus is on full-stack TypeScript, scalable API design, and making systems observable and maintainable. Outside of work, I enjoy philosophy, economics, and game theory — perspectives that shape how I think about building software and teams.
+            I&apos;m a software engineer who values clarity, reliability, and pragmatism. My focus is on full-stack TypeScript, scalable API design, and making systems observable and maintainable. Outside of work, I enjoy philosophy, economics, and game theory — perspectives that shape how I think about building software and teams.
           </p>
         </section>
 
@@ -84,7 +84,7 @@ export default function BoyingTangSite() {
         {/* Contact */}
         <section id="contact" className="mb-16">
           <h2 className="text-3xl font-bold mb-4">Contact</h2>
-          <p className="text-gray-700 mb-4">Interested in working together? Let's connect.</p>
+          <p className="text-gray-700 mb-4">Interested in working together? Let&apos;s connect.</p>
           <div className="flex gap-4">
             <a href="mailto:boying.tang.44@gmail.com" className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700">
               Email Me
