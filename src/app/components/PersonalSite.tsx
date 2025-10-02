@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function BoyingTangSite() {
   const skills = [
@@ -7,9 +8,8 @@ export default function BoyingTangSite() {
     "Node.js",
     "AWS (S3, CloudFront, Lambda)",
     "Terraform",
-    "OpenTelemetry / Observability",
     "Testing (Jest, RTL)",
-    "CI/CD (GitHub Actions, Vercel)",
+    "CI/CD (GitHub Actions, GitHub Pages)",
     "API Design (REST, GraphQL)"
   ];
 
@@ -27,7 +27,7 @@ export default function BoyingTangSite() {
             <a href="#projects" className="hover:underline">Projects</a>
             <a href="#skills" className="hover:underline">Skills</a>
             <a href="#contact" className="hover:underline">Contact</a>
-            <a href="/resume.pdf" className="rounded-md border px-3 py-1">Resume</a>
+            <Link href="/resume.pdf" className="rounded-md border px-3 py-1">Resume</Link>
           </nav>
         </div>
       </header>
@@ -37,7 +37,7 @@ export default function BoyingTangSite() {
         <section id="about" className="mb-16">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-gray-700 max-w-2xl">
-            I'm a software engineer who values clarity, reliability, and pragmatism in engineering. My focus is on full-stack TypeScript, scalable API design, and production-grade observability. I also enjoy philosophy, economics, and game theory — frameworks that shape my approach to problem solving.
+            I'm a software engineer who values clarity, reliability, and pragmatism. My focus is on full-stack TypeScript, scalable API design, and making systems observable and maintainable. Outside of work, I enjoy philosophy, economics, and game theory — perspectives that shape how I think about building software and teams.
           </p>
         </section>
 
@@ -48,21 +48,21 @@ export default function BoyingTangSite() {
             <article className="bg-white p-6 rounded-lg shadow">
               <h3 className="text-xl font-semibold">API Refactor & Type Unification</h3>
               <p className="text-gray-700 mt-2">
-                Refactored frontend/backend API structure to unify types, clarify contracts, and simplify routes, improving maintainability and reducing bugs.
+                Refactored frontend/backend API structure to unify types, clarify contracts, and simplify routes. This improved maintainability and reduced integration bugs.
               </p>
             </article>
 
             <article className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-semibold">Observability & Telemetry</h3>
+              <h3 className="text-xl font-semibold">Observability Enhancements</h3>
               <p className="text-gray-700 mt-2">
-                Added OpenTelemetry instrumentation to services, enabling high-cardinality traces and dashboards that reduced incident resolution time.
+                Contributed to improving monitoring and visibility across services by working on dashboards, logs, and telemetry integrations.
               </p>
             </article>
 
             <article className="bg-white p-6 rounded-lg shadow">
               <h3 className="text-xl font-semibold">Modern Web Deployment</h3>
               <p className="text-gray-700 mt-2">
-                Built and deployed a modern React/Next.js app with CI/CD pipelines on Vercel, integrating automated linting, type checks, and custom domain setup.
+                Built and deployed a modern React/Next.js app with GitHub Pages. Automated builds and checks were set up through GitHub Actions.
               </p>
             </article>
           </div>
@@ -100,7 +100,7 @@ export default function BoyingTangSite() {
       </main>
 
       <footer className="py-8 text-center text-sm text-gray-500">
-        <p>© {new Date().getFullYear()} Boying Tang. Built with Next.js + Tailwind CSS.</p>
+        <p>© {new Date().getFullYear()} Boying Tang. Deployed with GitHub Pages.</p>
       </footer>
     </div>
   );

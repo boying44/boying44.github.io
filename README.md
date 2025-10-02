@@ -1,3 +1,25 @@
+## GitHub Pages Deployment
+
+This project is configured to export a static site and deploy to GitHub Pages.
+
+### Build locally
+
+1. Copy resume asset to `public/resume.pdf` (handled automatically by `prebuild`)
+2. Build and export:
+
+```bash
+npm run build
+```
+
+Output will be in `out/`.
+
+### GitHub Pages
+
+Set the following Pages settings on your repository:
+- Source: GitHub Actions
+- Custom domain or `https://<user>.github.io/<repo>`
+
+The workflow reads `BASE_PATH` from the repository name to set `basePath`/`assetPrefix`.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
