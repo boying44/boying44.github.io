@@ -1,7 +1,21 @@
-import React from "react";
+"use client";
+
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
 export default function BoyingTangSite() {
+  const [resumeOpen, setResumeOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setResumeOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
   const skills = [
     "TypeScript / JavaScript",
     "React / Next.js",
@@ -27,7 +41,42 @@ export default function BoyingTangSite() {
             <a href="#projects" className="hover:underline">Projects</a>
             <a href="#skills" className="hover:underline">Skills</a>
             <a href="#contact" className="hover:underline">Contact</a>
-            <Link href="/resume.pdf" className="rounded-md border px-3 py-1">Resume</Link>
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={() => setResumeOpen(!resumeOpen)}
+                className="rounded-md border px-3 py-1 flex items-center gap-1"
+              >
+                Resume
+                <span className="text-xs">▾</span>
+              </button>
+              {resumeOpen && (
+                <div className="absolute right-0 mt-1 w-56 bg-white rounded-md shadow-lg border py-1 z-10">
+                  <Link
+                    href="/resume-engineering.pdf"
+                    download="Boying-Tang-Resume-Engineering.pdf"
+                    className="block px-4 py-2 text-sm hover:bg-gray-50"
+                    onClick={() => setResumeOpen(false)}
+                  >
+                    Engineering (Technical)
+                  </Link>
+                  <Link
+                    href="/resume-client-facing.pdf"
+                    download="Boying-Tang-Resume-Client-Facing.pdf"
+                    className="block px-4 py-2 text-sm hover:bg-gray-50"
+                    onClick={() => setResumeOpen(false)}
+                  >
+                    Client-Facing
+                  </Link>
+                  <Link
+                    href="/resume"
+                    className="block px-4 py-2 text-sm hover:bg-gray-50 border-t"
+                    onClick={() => setResumeOpen(false)}
+                  >
+                    Custom (section picker)
+                  </Link>
+                </div>
+              )}
+            </div>
           </nav>
         </div>
       </header>

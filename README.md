@@ -4,7 +4,11 @@ This project is configured to export a static site and deploy to GitHub Pages.
 
 ### Build locally
 
-1. Copy resume asset to `public/resume.pdf` (handled automatically by `prebuild`)
+1. (Optional) Copy resume PDFs to `src/app/public/` for prebuild to copy to `public/`:
+   - `BoyingTangResume_09_2025.docx.pdf` → `resume.pdf`
+   - `resume-engineering.pdf` → Engineering version (nav dropdown)
+   - `resume-client-facing.pdf` → Client-facing version (nav dropdown)
+   Or add `resume-engineering.pdf` and `resume-client-facing.pdf` directly to `public/`.
 2. Build and export:
 
 ```bash
